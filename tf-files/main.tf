@@ -122,8 +122,8 @@ resource "github_repository_file" "dbendpoint" {
   file                = "dbserver.endpoint"
   repository          = "phonebook"
   overwrite_on_create = true
-  branch              = "master"
-}
+  branch              = "main"
+} 
 
 data "aws_route53_zone" "selected" {
   name = var.hosted-zone
